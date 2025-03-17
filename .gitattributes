@@ -1,0 +1,2 @@
+Draft/Distribution/Draft-MacOS-1.0.dmg filter=lfs diff=lfs merge=lfs -text
+Draft/Distribution/draft_bundle/Draft-1.0.dmg filter=lfs diff=lfs merge=lfs -text
