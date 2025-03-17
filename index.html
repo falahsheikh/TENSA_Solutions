@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENSA Solutions - Software Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div class="background">
+            <img src="./images/main_icon.png" alt="TENSA Solutions Background Logo">
+        </div>
+        
+        <div class="container">
+            <header>
+                <img src="./images/title.png" alt="TENSA Solutions" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active" onclick="showPage('home')">Home</a></li>
+                        <li><a href="#" onclick="showPage('products')">Products</a></li>
+                        <li><a href="#" onclick="showPage('about')">About</a></li>
+                        <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            
+            <div id="home" class="page active">
+                <div class="home-content">
+                    <h1 class="home-title">TENSA Solutions</h1>
+                    <p class="home-subtitle">Innovative software solutions designed to streamline your workflow and boost productivity</p>
+                    <a href="#" onclick="showPage('products')" class="cta-button">Explore Our Products</a>
+                </div>
+            </div>
+            
+            
+            <div id="products" class="page products-page">
+                <h1 style="text-align: center; margin: 40px 0;">Software</h1>
+                
+                <div class="products">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./software_product/draft.jpg" width="200" height="190" alt="Software Product 1">
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-title">Draft</h2>
+                            <p class="product-desc">Draft is a lightweight, Java-based text editor designed for simplicity and efficiency. 
+                                Inspired by the functionality of Emacs, it provides a clean and intuitive interface for editing text files, 
+                                with additional features like a built-in terminal for advanced users. It is ideal for writers 
+                                and anyone who needs a fast and customizable text editing tool.</p>
+                            <a href="#" class="product-btn" onclick="openDownloadPage('product1')">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./software_product/tabard.jpg" width="200" height="190" alt="Software Product 2">
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-title">Tabard</h2>
+                            <p class="product-desc">Tabard is a Chrome extension that enhances tab management by offering features like 
+                                automatic grouping by domain, advanced search, session saving, and theme customization. It's designed to 
+                                help users, including developers and casual browsers, maintain an organized and efficient browsing experience. 
+                            </p>
+                            <a href="#" class="product-btn" onclick="openDownloadPage('product2')">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./software_product/eventor.jpg" width="200" height="190" alt="Software Product 3">
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-title">Eventor</h2>
+                            <p class="product-desc">Tabard is a Chrome extension that enhances tab management by offering features like 
+                                automatic grouping by domain, advanced search, session saving, and theme customization. It's designed to 
+                                help users, including developers and casual browsers, maintain an organized and efficient browsing experience. 
+                            </p>
+                            <a href="#" class="product-btn" onclick="openDownloadPage('product3')">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div id="about" class="page about-page">
+                <div class="about-content">
+                    <h1 class="about-title">About TENSA Solutions</h1>
+                    
+                    <div class="about-section">
+                        <h2>--</h2>
+                        <p>Providing software tools that help beginner researchers and educators boost productivity. As a solo developer, I create simple, effective solutions to streamline research processes and improve efficiency in educational settings.</p>
+                    </div>
+                    
+                    <div class="about-section">
+                        <h2>The Team</h2>
+                        <p>TENSA Solutions is a solo endeavor focused on creating tools for researchers and educators.</p>
+                        <div class="team-member">
+                            <h3>Falah Sheikh</h3>
+                            <p>Founder et al.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="contact" class="page about-page">
+                <div class="about-content">  
+                    <br><br>        
+                    <div class="about-section">
+                        <h1>Get in Touch</h1>
+                        <div style="margin-top: 30px;">
+                            <p><strong>Email:</strong> 
+                                <a href="mailto:tensasolutionsco@gmail.com" class="email-link" target="_blank">
+                                    tensasolutionsco@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <footer>
+                <p>&copy; 2025 TENSA Solutions. All rights reserved.</p>
+            </footer>
+        </div>
+        
+        
+        <!-- draft -->
+        <div id="product1-download" class="download-page">
+            <div class="download-container">
+                <span class="close-btn" onclick="closeDownloadPage('product1')">&times;</span>
+                <h2 class="download-title">Get Draft</h2>            
+                <div class="image-gallery">
+                    <h3 class="gallery-title">Draft Screenshots</h3>
+                    <div class="gallery-container">
+                        <img src="./software_product_screenshot/draft/term_1.jpg" alt="1" class="gallery-image">
+                        <img src="./software_product_screenshot/draft/term_2.jpg" alt="2" class="gallery-image">
+                        <img src="./software_product_screenshot/draft/term_3.jpg" alt="3" class="gallery-image">
+                        <img src="./software_product_screenshot/draft/term_4.jpg" alt="4" class="gallery-image">
+                    </div>
+                    <div class="gallery-thumbnail">
+                        <img src="./software_product_screenshot/draft/term_1.jpg" alt="Thumbnail 1" class="thumbnail active" onclick="showImage(0, this)">
+                        <img src="./software_product_screenshot/draft/term_2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="showImage(1, this)">
+                        <img src="./software_product_screenshot/draft/term_3.jpg" alt="Thumbnail 3" class="thumbnail" onclick="showImage(2, this)">
+                        <img src="./software_product_screenshot/draft/term_4.jpg" alt="Thumbnail 4" class="thumbnail" onclick="showImage(3, this)">
+                    </div>
+                </div>
+                        
+                <div class="download-options">
+                    <a href="./Draft/Distribution/draft_bundle/Draft-1.0.dmg" class="download-btn">MacOS</a>
+                    <a href="./Draft/Draft.jar" class="download-btn">JAR</a>
+                    <a href="./Draft/Draft.zip" class="download-btn">ZIP</a>
+                </div>
+                
+                <div class="system-requirements">
+                    <h3>System Requirements:</h3>
+                    <ul>
+                        <li><b>MacOS Version</b>: macOS 12+</li>
+                        <li><b>RAM</b>: 4 GB minimum (8 GB recommended for better performance)</li>
+                        <li><b>Storage</b>: 1 GB free disk space for installation</li>
+                        <li><b>Additional Requirements</b>:
+                            <ul>
+                                <li><b>MacOS DMG</b>: No additional Java installation required (included in package)</li>
+                                <li><b>JAR file users</b>: Java Runtime Environment (JRE) 11 or later</li>
+                                <li><b>ZIP file users</b>: Java Runtime Environment (JRE) 11 or later</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="installation-instructions">
+                    <h3>Installation Instructions:</h3>
+                    <ul>
+                        <li><b>MacOS DMG</b>:
+                            <ol>
+                                <li>Download the DMG file</li>
+                                <li>Double-click to open the disk image</li>
+                                <li>Drag the Draft application to your Applications folder</li>
+                                <li>Launch from your Applications folder</li>
+                            </ol>
+                        </li>
+                        <li><b>JAR file</b>:
+                            <ol>
+                                <li>Download the JAR file</li>
+                                <li>Launch using: <code>java -jar Draft.jar</code></li>
+                            </ol>
+                        </li>
+                        <li><b>ZIP file</b>:
+                            <ol>
+                                <li>Download the ZIP file</li>
+                                <li>Extract contents to your desired location</li>
+                                <li>Run the included launcher</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- tabard -->
+        <div id="product2-download" class="download-page">
+            <div class="download-container">
+                <span class="close-btn" onclick="closeDownloadPage('product2')">&times;</span>
+                <h2 class="download-title">Get Tabard</h2>            
+                <div class="image-gallery">
+                    <h3 class="gallery-title">Tabard Screenshots</h3>
+                    <div class="gallery-container">
+                        <img src="./software_product_screenshot/tabard/tab1.jpg" alt="1" class="gallery-image">
+                        <img src="./software_product_screenshot/tabard/tab2.jpg" alt="2" class="gallery-image">
+                        <img src="./software_product_screenshot/tabard/tab3.jpg" alt="3" class="gallery-image">
+                        <img src="./software_product_screenshot/tabard/tab4.jpg" alt="4" class="gallery-image">
+                    </div>
+                    <div class="gallery-thumbnail">
+                        <img src="./software_product_screenshot/tabard/tab1.jpg" alt="Thumbnail 1" class="thumbnail active" onclick="showImage(0, this)">
+                        <img src="./software_product_screenshot/tabard/tab2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="showImage(1, this)">
+                        <img src="./software_product_screenshot/tabard/tab3.jpg" alt="Thumbnail 3" class="thumbnail" onclick="showImage(2, this)">
+                        <img src="./software_product_screenshot/tabard/tab4.jpg" alt="Thumbnail 4" class="thumbnail" onclick="showImage(3, this)">
+                    </div>
+                </div>
+                        
+                <div class="download-options">
+                    <a href="https://chromewebstore.google.com/detail/tabard/pfepmkikipoklcleabdklapkedbonaem?hl=en-US&utm_source=ext_sidebar" class="download-btn" target="_blank">Extend</a>
+                </div>
+                
+                <div class="system-requirements">
+                    <div class="system-requirements">
+                        <h3>System Requirements:</h3>
+                        <ul>
+                            <li><b>Operating System</b>:
+                                <ul>
+                                    <li>Windows 10 or later</li>
+                                    <li>macOS Big Sur 11 or later</li>
+                                    <li>64-bit Linux distributions such as Ubuntu 18.04+, Debian 10+, openSUSE 15.5+, or Fedora Linux 39+</li>
+                                </ul>
+                            </li>
+                            <li><b>Processor</b>: Intel Pentium 4 or later with SSE3 support</li>
+                            <li><b>RAM</b>: 4 GB minimum (8 GB recommended for better performance)</li>
+                            <li><b>Storage</b>: At least 300 MB of free disk space for installation (additional space may be required for user data)</li>
+                            <li><b>Graphics</b>: GPU capable of hardware acceleration; support for technologies like WebGL may be necessary depending on extension features</li>
+                            <li><b>Internet Connection</b>: Required for installation, updates, and cloud-based features</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="browser-requirements">
+                        <h3>Browser Requirements:</h3>
+                        <ul>
+                            <li><b>Google Chrome</b>: Version 49 or newer</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- eventor -->
+            <div id="product3-download" class="download-page">
+                <div class="download-container">
+                    <span class="close-btn" onclick="closeDownloadPage('product3')">&times;</span>
+                    <h2 class="download-title">Get Eventor</h2>            
+                    <div class="image-gallery">
+                        <h3 class="gallery-title">Eventor Screenshots</h3>
+                        <div class="gallery-container">
+                            <img src="./software_product_screenshot/eventor/event1.jpg" alt="1" class="gallery-image">
+                            <img src="./software_product_screenshot/eventor/event2.jpg" alt="2" class="gallery-image">
+                            <img src="./software_product_screenshot/eventor/event3.jpg" alt="3" class="gallery-image">
+                        </div>
+                        <div class="gallery-thumbnail">
+                            <img src="./software_product_screenshot/eventor/event1.jpg" alt="Thumbnail 1" class="thumbnail active" onclick="showImage(0, this)">
+                            <img src="./software_product_screenshot/eventor/event2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="showImage(1, this)">
+                            <img src="./software_product_screenshot/eventor/event3.jpg" alt="Thumbnail 3" class="thumbnail" onclick="showImage(2, this)">
+                        </div>
+                    </div>
+                            
+                    <div class="download-options">
+                        <a href="https://chromewebstore.google.com/detail/eventor/aoomnglnfikgejbdfnoebbiboelmfpfn?hl=en-US&utm_source=ext_sidebar" class="download-btn" target="_blank">Extend</a>
+                    </div>
+                    
+                    <div class="system-requirements">
+                        <div class="system-requirements">
+                            <h3>System Requirements:</h3>
+                            <ul>
+                                <li><b>Operating System</b>:
+                                    <ul>
+                                        <li>Windows 10 or later</li>
+                                        <li>macOS Big Sur 11 or later</li>
+                                        <li>64-bit Linux distributions such as Ubuntu 18.04+, Debian 10+, openSUSE 15.5+, or Fedora Linux 39+</li>
+                                    </ul>
+                                </li>
+                                <li><b>Processor</b>: Intel Pentium 4 or later with SSE3 support</li>
+                                <li><b>RAM</b>: 4 GB minimum (8 GB recommended for better performance)</li>
+                                <li><b>Storage</b>: At least 300 MB of free disk space for installation (additional space may be required for user data)</li>
+                                <li><b>Graphics</b>: GPU capable of hardware acceleration; support for technologies like WebGL may be necessary depending on extension features</li>
+                                <li><b>Internet Connection</b>: Required for installation, updates, and cloud-based features</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="browser-requirements">
+                            <h3>Browser Requirements:</h3>
+                            <ul>
+                                <li><b>Google Chrome</b>: Version 49 or newer</li>
+                            </ul>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="imageZoomModal">
+            <span class="close-btn" onclick="closeZoomView()">&times;</span>
+            <img id="zoomedImage" src="" alt="Zoomed Image">
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
