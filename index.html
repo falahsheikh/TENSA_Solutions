@@ -127,77 +127,84 @@
         </div>
         
         
-        <!-- draft -->
-        <div id="product1-download" class="download-page">
-            <div class="download-container">
-                <span class="close-btn" onclick="closeDownloadPage('product1')">&times;</span>
-                <h2 class="download-title">Get Draft</h2>            
-                <div class="image-gallery">
-                    <h3 class="gallery-title">Draft Screenshots</h3>
-                    <div class="gallery-container">
-                        <img src="./software_product_screenshot/draft/term_1.jpg" alt="1" class="gallery-image">
-                        <img src="./software_product_screenshot/draft/term_2.jpg" alt="2" class="gallery-image">
-                        <img src="./software_product_screenshot/draft/term_3.jpg" alt="3" class="gallery-image">
-                        <img src="./software_product_screenshot/draft/term_4.jpg" alt="4" class="gallery-image">
-                    </div>
-                    <div class="gallery-thumbnail">
-                        <img src="./software_product_screenshot/draft/term_1.jpg" alt="Thumbnail 1" class="thumbnail active" onclick="showImage(0, this)">
-                        <img src="./software_product_screenshot/draft/term_2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="showImage(1, this)">
-                        <img src="./software_product_screenshot/draft/term_3.jpg" alt="Thumbnail 3" class="thumbnail" onclick="showImage(2, this)">
-                        <img src="./software_product_screenshot/draft/term_4.jpg" alt="Thumbnail 4" class="thumbnail" onclick="showImage(3, this)">
-                    </div>
-                </div>
-                        
-                <div class="download-options">
-                    <a href="./Draft/Distribution/draft_bundle/Draft-1.0.dmg" class="download-btn">MacOS</a>
-                    <a href="./Draft/Draft.jar" class="download-btn">JAR</a>
-                    <a href="./Draft/Draft.zip" class="download-btn">ZIP</a>
-                </div>
-                
-                <div class="system-requirements">
-                    <h3>System Requirements:</h3>
-                    <ul>
-                        <li><b>MacOS Version</b>: macOS 12+</li>
-                        <li><b>RAM</b>: 4 GB minimum (8 GB recommended for better performance)</li>
-                        <li><b>Storage</b>: 1 GB free disk space for installation</li>
-                        <li><b>Additional Requirements</b>:
-                            <ul>
-                                <li><b>MacOS DMG</b>: No additional Java installation required (included in package)</li>
-                                <li><b>JAR file users</b>: Java Runtime Environment (JRE) 11 or later</li>
-                                <li><b>ZIP file users</b>: Java Runtime Environment (JRE) 11 or later</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="installation-instructions">
-                    <h3>Installation Instructions:</h3>
-                    <ul>
-                        <li><b>MacOS DMG</b>:
-                            <ol>
-                                <li>Download the DMG file</li>
-                                <li>Double-click to open the disk image</li>
-                                <li>Drag the Draft application to your Applications folder</li>
-                                <li>Launch from your Applications folder</li>
-                            </ol>
-                        </li>
-                        <li><b>JAR file</b>:
-                            <ol>
-                                <li>Download the JAR file</li>
-                                <li>Launch using: <code>java -jar Draft.jar</code></li>
-                            </ol>
-                        </li>
-                        <li><b>ZIP file</b>:
-                            <ol>
-                                <li>Download the ZIP file</li>
-                                <li>Extract contents to your desired location</li>
-                                <li>Run the included launcher</li>
-                            </ol>
-                        </li>
-                    </ul>
-                </div>
+<!-- Draft Download Section -->
+<div id="product1-download" class="download-page">
+    <div class="download-container">
+        <span class="close-btn" onclick="closeDownloadPage('product1')">&times;</span>
+        <h2 class="download-title">Get Draft</h2>
+
+        <!-- Image Gallery -->
+        <div class="image-gallery">
+            <h3 class="gallery-title">Draft Screenshots</h3>
+            <div class="gallery-container">
+                <img src="./software_product_screenshot/draft/term_1.jpg" alt="Screenshot 1" class="gallery-image">
+                <img src="./software_product_screenshot/draft/term_2.jpg" alt="Screenshot 2" class="gallery-image">
+                <img src="./software_product_screenshot/draft/term_3.jpg" alt="Screenshot 3" class="gallery-image">
+                <img src="./software_product_screenshot/draft/term_4.jpg" alt="Screenshot 4" class="gallery-image">
+            </div>
+            <div class="gallery-thumbnail">
+                <img src="./software_product_screenshot/draft/term_1.jpg" alt="Thumbnail 1" class="thumbnail active" onclick="showImage(0, this)">
+                <img src="./software_product_screenshot/draft/term_2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="showImage(1, this)">
+                <img src="./software_product_screenshot/draft/term_3.jpg" alt="Thumbnail 3" class="thumbnail" onclick="showImage(2, this)">
+                <img src="./software_product_screenshot/draft/term_4.jpg" alt="Thumbnail 4" class="thumbnail" onclick="showImage(3, this)">
             </div>
         </div>
+
+        <!-- Download Options -->
+        <div class="download-options">
+            <!-- General macOS Download Button -->
+            <a href="./Draft/Draft.zip" class="download-btn">Download for macOS</a>
+
+            <!-- JAR Download Button for non-macOS users -->
+            <a href="./Draft/DraftByFalah.jar" class="download-btn">Download JAR</a>
+        </div>
+
+        <!-- System Requirements -->
+        <div class="system-requirements">
+            <h3>System Requirements</h3>
+            <ul>
+                <li><b>Operating System:</b> macOS 12 or later</li>
+                <li><b>RAM:</b> 4 GB minimum (8 GB recommended)</li>
+                <li><b>Storage:</b> 1 GB of free disk space</li>
+                <li><b>Java Requirements:</b>
+                    <ul>
+                        <li><b>macOS DMG:</b> Includes Java, no additional installation required</li>
+                        <li><b>JAR & ZIP:</b> Requires Java Runtime Environment (JRE) 11 or later</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Installation Instructions -->
+        <div class="installation-instructions">
+            <h3>Installation Instructions</h3>
+            <ul>
+                <li><b>macOS DMG:</b>
+                    <ol>
+                        <li>Download the DMG file</li>
+                        <li>Double-click to open it</li>
+                        <li>Drag Draft.app to the Applications folder</li>
+                        <li>Launch Draft from Applications</li>
+                    </ol>
+                </li>
+                <li><b>JAR file:</b>
+                    <ol>
+                        <li>Download the JAR file</li>
+                        <li>Run using: <code>java -jar Draft.jar</code></li>
+                    </ol>
+                </li>
+                <li><b>ZIP file:</b>
+                    <ol>
+                        <li>Download and extract the ZIP file</li>
+                        <li>Run the included launcher</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
 
         <!-- tabard -->
         <div id="product2-download" class="download-page">
