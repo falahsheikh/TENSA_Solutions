@@ -84,3 +84,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Back to top button functionality
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    // Only show button on mobile screens
+    if (window.innerWidth <= 768) {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            document.getElementById("backToTopBtn").style.display = "block";
+        } else {
+            document.getElementById("backToTopBtn").style.display = "none";
+        }
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+document.getElementById("backToTopBtn").addEventListener("click", function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
