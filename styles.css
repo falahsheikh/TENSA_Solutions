@@ -580,14 +580,14 @@ footer {
         right: 20px;
         z-index: 99;
         border-radius: 20px;
-        border: 1px solid #e0e0d5;
-        background-color: #e0e0d5;
+        border: 1px solid #9c9c9c;
+        background-color: #e0e0e0;
         color: #000000;
         cursor: pointer;
         width: 50px;
         height: 40px;
         text-align: center;
-        box-shadow: 2px 2px 0 #888888;
+        box-shadow: 2px 2px 0 #e0e0d5;
         transition: all 0.1s ease;
         display: flex;
         align-items: center;
@@ -598,13 +598,13 @@ footer {
     
     /* Hover effect */
     .back-to-top-btn:hover {
-        background-color: #888888;
+        background-color: #e0e0e0;
     }
     
     /* Active/pressed state animation */
     .back-to-top-btn:active {
         transform: translateY(2px) translateX(2px);
-        box-shadow: 0 0 0 #e8e8e0;
+        box-shadow: 0 0 0 #c0392b;
     }
 
     /* Header adjustments */
