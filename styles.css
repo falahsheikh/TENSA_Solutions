@@ -764,3 +764,9 @@ footer {
         height: 30px;
     }
 }
+
+@media (min-width: 768px) {
+    #backToTopBtn {
+      display: none;
+    }
+  }
