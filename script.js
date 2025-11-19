@@ -82,7 +82,33 @@
                 }
             }
         }
-        
+
+        // Back to top button functionality
+        document.addEventListener("DOMContentLoaded", function () {
+            const backToTopBtn = document.getElementById("backToTopBtn");
+
+            if (!backToTopBtn) return;
+
+            // Show / hide on scroll
+            window.addEventListener("scroll", function () {
+                if (window.innerWidth <= 768) {
+                    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                        backToTopBtn.style.display = "block";
+                    } else {
+                        backToTopBtn.style.display = "none";
+                    }
+                }
+            });
+
+            // Smooth scroll to top
+            backToTopBtn.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+
         // When the user clicks on the button, scroll to the top of the document
         document.getElementById("backToTopBtn").addEventListener("click", function() {
             document.body.scrollTop = 0; // For Safari
