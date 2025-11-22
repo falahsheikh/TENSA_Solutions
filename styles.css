@@ -659,7 +659,7 @@
 
         .about-section .team-member {
             background: #f9f9f9;
-            border-radius: 10px;
+            border-radius: 5px;
             padding: 20px;
             flex: 1 1 250px;
             display: flex;
