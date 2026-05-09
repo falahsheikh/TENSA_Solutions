@@ -45,6 +45,17 @@
 
                 <div class="product-card">
                     <div class="product-img">
+                        <img src="./software_product/neuroxai.jpg" width="200" height="190" alt="NeuroXAI">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title">NeuroXAI</h2>
+                        <p class="product-desc">NeuroXAI is a Lightweight explainable AI tool for early Alzheimer's detection (CN/EMI/LMCI). Presented at SPIE Medical Imaging 2026, this system combines EfficientNetV2B0 (88% accuracy) with Grad-CAM++ visualizations, multi-planar neuroimaging viewing, and 3D modeling.</p>
+                        <a href="#" class="product-btn" onclick="openDownloadPage('product5')">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
                         <img src="./software_product/screenvisionai.jpg" width="200" height="190" alt="ScreenVision AI">
                     </div>
                     <div class="product-info">
@@ -155,7 +166,7 @@
 
             <!-- Download Options -->
             <div class="download-options">
-                <a href="https://github.com/falahsheikh/Draft" class="download-btn">Source</a>
+                <a href="https://github.com/falahsheikh/Draft" class="download-btn" target="_blank">Source</a>
                 <a href="./executables/Draft/DraftByFalah.jar" class="download-btn">Windows (.exe)</a>
                 <a href="./executables/Draft/DraftByFalah.zip" class="download-btn">macOS (.app)</a>
             </div>
@@ -304,7 +315,7 @@
 
             <!-- Download Options -->
             <div class="download-options">
-                <a href="https://github.com/falahsheikh/ScreenVisionAI.git" class="download-btn">Source</a>
+                <a href="https://github.com/falahsheikh/ScreenVisionAI.git" class="download-btn" target="_blank">Source</a>
             </div>
 
             <!-- System Requirements -->
@@ -328,6 +339,60 @@
                     <li>Color-coded urgency classification (Routine to Emergency)</li>
                     <li>Comprehensive PDF report generation</li>
                     <li>Support for multiple deep learning models</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- NeuroXAI Download Section -->
+    <div id="product5-download" class="download-page">
+        <div class="download-container">
+            <span class="close-btn" onclick="closeDownloadPage('product5')">&times;</span>
+            <h2 class="download-title">NeuroXAI</h2>
+
+            <!-- Image Gallery -->
+            <div class="image-gallery">
+                <h3 class="gallery-title">NeuroXAI Screenshots</h3>
+                <div class="gallery-container">
+                    <img src="./software_product_screenshot/NeuroXAI/neuroxai1.jpg" alt="Screenshot 1" class="gallery-image">
+                    <img src="./software_product_screenshot/NeuroXAI/neuroxai2.jpg" alt="Screenshot 2" class="gallery-image">
+                </div>
+                <div class="gallery-thumbnail">
+                    <img src="./software_product_screenshot/NeuroXAI/neuroxai1.jpg" alt="Thumbnail 1" class="thumbnail active" onclick="showImage(0, this)">
+                    <img src="./software_product_screenshot/NeuroXAI/neuroxai2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="showImage(1, this)">
+                </div>
+            </div>
+
+            <!-- Download Options -->
+            <div class="download-options">
+                <a href="https://github.com/falahsheikh/NeuroXAI" class="download-btn" target="_blank">Source</a>
+            </div>
+
+            <!-- System Requirements -->
+            <div class="system-requirements">
+                <h3>System Requirements</h3>
+                <ul>
+                    <li><b>Operating System:</b> macOS 10.14+, Windows 10/11 (64-bit), or Linux (Ubuntu 18.04+, CentOS 7+, Fedora 30+)</li>
+                    <li><b>Python:</b> Python 3.8 or later</li>
+                    <li><b>RAM:</b> 8 GB minimum (16 GB recommended)</li>
+                    <li><b>Storage:</b> 5 GB free disk space</li>
+                    <li><b>Graphics:</b> OpenGL support, NVIDIA GPU with 4GB+ VRAM recommended for GPU acceleration</li>
+                    <li><b>Display:</b> Minimum 1280x720 resolution (1920x1080 recommended)</li>
+                    <li><b>Dependencies:</b> TensorFlow, OpenCV, Matplotlib, NumPy, SciPy, scikit-image, SimpleITK, Pillow</li>
+                </ul>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Multi-planar viewing (axial, coronal, sagittal)</li>
+                    <li>Window/level adjustment for optimal contrast</li>
+                    <li>Zoom, pan, and crosshair navigation</li>
+                    <li>Drawing tools with customizable colors and brush sizes</li>
+                    <li>Distance measurement with real-world units</li>
+                    <li>3D surface model generation using marching cubes</li>
+                    <li>AI-powered Alzheimer's detection using EfficientNetV2B0</li>
+                    <li>Grad-CAM++ attention visualization for model interpretability</li>
+                    <li>Guided backpropagation for enhanced feature attribution</li>
+                    <li>Comprehensive medical report generation</li>
                 </ul>
             </div>
         </div>
